@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024-QBSMCC@CFM-WEBSITE</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2b2002;
+            color: #f3f3f3;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid rgb(117, 0, 0);
+        }
+        nav {
+            background-color: #2b2002;
+            color: #f3f3f3;
+            padding: 20px 0;
+            border-bottom: 2px solid rgb(117, 0, 0);
+        }
+        nav a {
+            color: #f3f3f3;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+        section.full-height {
+            background-color: #b06707;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid rgb(117, 0, 0);
+            height: 100vh;
+            overflow: hidden;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        section img {
+            width: 100%; /* Ensure the image covers the full viewport width */
+            height: auto; /* Ensure the image covers the full viewport height */
+            object-fit: cover; /* Cover the entire section area */
+        }
+        .address-section {
+            background-color: #2b2002;
+            color: #f3f3f3;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid rgb(117, 0, 0);
+        }
+        .address-section div {
+            width: 45%;
+        }
+        .team-section {
+            background-color: #f3f3f3;
+            color: #080202;
+            padding: 20px;
+            border-bottom: 2px solid rgb(117, 0, 0);
+        }
+        .team-member {
+            display: flex;
+            margin-bottom: 20px;
+            border: 1px solid #080202;
+            padding: 10px;
+        }
+        .team-member img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .team-member div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .team-member div a {
+            color: #080202;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #2b2002;
+            color: #f3f3f3;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid rgb(117, 0, 0);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>QUANTUM BEAMS AND SUSTAINABLE MATERIALS & COMPUTATIONAL CHEMISTRY</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="People.html">TEAM</a>
+        <a href="Events.html">EVENTS</a>
+        <a href="Publication.html">PUBLICATION</a>
+        <a href="Jobs.html">JOBS</a>
+    </nav>    
+
+    <section class="full-height">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="Pictures/Yasmeen-queen/the collegues.jpg" alt="Team Image"></div>
+                <!-- Add more slides as needed -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    
+    <div class="team-section">
+        <h2>Yasmeen Meeting Queen</h2>
+        <div class="team-member">
+            <img src="Pictures/Yasmeen-queen/Untitled.jpg" alt="Team Member 2">
+            <div>
+                <h3>Post Doc</h3>
+                <p>Team member 2 description goes here. This section can include their role, expertise, and other relevant information.</p>
+                <a href="https://www.linkedin.com/in/teammember2" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/teammember2" target="_blank">Twitter</a>
+                <a href="mailto:teammember2@example.com">Email</a>
+            </div>
+        </div>
+        <!-- Add more team members as needed -->
+    </div>
+
+    <div class="address-section">
+        <div>
+            <h2>CENTRO DE FÍSICA DE MATERIALES</h2>
+            <P>QUANTUM BEAMS AND SUSTAINABLE MATERIALS & COMPUTATIONAL CHEMISTRY</P>
+            <p>EMAIL: cfm@ehu.es</p>
+            <p>PHONE: (+34) 943 01 87 86</p>
+        </div>
+        <div>
+            <h2>ADDRESS</h2>
+            <p>CENTRO DE FÍSICA DE MATERIALES</p>
+            <p>Paseo Manuel de Lardizabal, 5-E</p>
+            <p>Donostia – San Sebastián (Gipuzkoa)</p>
+            <p>Spain - 20018</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024-QBSMCC@CFM-WEBSITE. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+</html>
